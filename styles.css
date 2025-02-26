@@ -1,0 +1,234 @@
+/* Box-sizing: Makes width/height calculations easier */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove default anchor styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Reset button styles */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Ensure consistent font sizing and line height */
+body {
+  font-family: "Lexend", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+}
+
+/* Ensure images don't overflow */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Reset headings and paragraph margins */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default input styles */
+input,
+textarea,
+select,
+button {
+  font: inherit;
+  border-radius: 4px;
+}
+
+/* Set a smooth scroll effect */
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: whitesmoke;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 100px 20px 100px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+.header>h1 {
+  font-size: 3rem;
+}
+
+#openFormBtn {
+  margin-right: 200px;
+  font-size: 1.7rem;
+  background-color: black;
+  color: white;
+  padding: 5px 20px 5px 20px;
+  border-radius: 15px;
+}
+
+#openFormBtn:hover {
+  background-color: rgba(0, 255, 0, 0.5);
+  color: black;
+}
+
+.modal {
+  position: fixed;
+  z-index: 10;
+  margin: 50px;
+  background-color: white;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  padding: 60px;
+  display: none;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 1.1rem;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: lime;
+}
+
+.modal-title {
+  text-align: left;
+}
+
+#bookForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.wrap {
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#bookForm input {
+  height: 2.1rem;
+  background-color: whitesmoke;
+  border-radius: 15px;
+  border-style: none;
+  padding: 5px;
+}
+
+#bookForm input:focus {
+  outline: none;
+  border: 2px solid lightgray;
+}
+
+.wrap-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.add-book {
+  background-color: rgba(0, 255, 0, 0.5);
+  border-radius: 15px;
+  padding: 10px 50px 10px 50px;
+}
+
+.add-book:hover {
+  background-color: rgba(0, 255, 0, 1);
+}
+
+.container {
+  width: 100%;
+  padding: 40px 200px 30px 200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.book-card {
+  position: relative;
+  background-color: white;
+  border-radius: 15px;
+  padding: 40px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.read-toggle {
+  border: 2px dashed rgba(0, 255, 0, 0.5);
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.book-icon {
+  position: absolute;
+  top: -8px;
+  right: 10%;
+  width: 4rem;
+  height: 6rem;
+  fill: black;
+}
+
+
+.delete-btn {
+  background-color: rgba(0, 255, 0, 0.5);
+  border-radius: 15px;
+  padding: 10px 10px 5px 10px;
+  align-self: flex-end;
+}
+
+.delete-btn:hover {
+  background-color: tomato;
+
+  & svg {
+    fill: white;
+  }
+}
+
+.delete-btn>svg {
+  width: 1.7rem;
+  height: 1.7rem;
+}
+

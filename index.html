@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Lexend:wght@100..900&family=Monomakh&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="header">
+    <h1>Library.</h1>
+    <button id="openFormBtn"> + </button>
+  </div>
+
+  <!-- Popup Form (Hidden by Default) -->
+  <div id="popupForm" class="modal">
+
+    <div class="modal-title">
+      <h2>Add a new book</h2>
+      <span class="close-btn">&times;</span>
+    </div>
+
+    <div class="modal-content">
+
+      <form id="bookForm">
+
+        <div class="wrap">
+          <label for="title">Title:</label>
+          <input type="text" id="title" required>
+        </div>
+
+        <div class="wrap">
+          <label for="author">Author:</label>
+          <input type="text" id="author" required>
+        </div>
+
+        <div class="wrap">
+          <label for="pages">Pages:</label>
+          <input type="number" id="pages" required>
+        </div>
+
+        <div class="wrap-check">
+          <input type="checkbox" id="read">
+          <label for="read">Have you read this book?</label>
+        </div>
+
+        <button type="submit" class="add-book">Add Book</button>
+
+      </form>
+    </div>
+  </div>
+  <div class="container"></div>
+  <script src="main.js"></script>
+</body>
+
+</html>
