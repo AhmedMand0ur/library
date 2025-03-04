@@ -47,7 +47,7 @@ A simple web-based Library App that allows users to add, remove, and manage thei
 - 🔍 Add **search & filter** options.
 
 ## 📝 License
-This project is open-source and available under the [MIT License](LICENSE).
+This project is open-source.
 
 ---
 👨‍💻 **Contributions are welcome!** Feel free to fork the repo and submit pull requests. Happy coding! 🚀
