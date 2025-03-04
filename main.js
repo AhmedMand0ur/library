@@ -7,6 +7,31 @@ const container = document.querySelector(".container");
 
 const myLibrary = [];
 
+
+class Book {
+    constructor(title, author, pages, read){
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
+    }
+
+    info = function () {
+        return `Title: ${this.title}\nAuthor: ${this.author}\nNo. of pages: ${this.pages}\nRead: ${this.read ? "Yes" : "No"}`;
+    }
+
+    toggleRead = function () {
+        if (this.read === true) {
+            this.read = false;
+        }
+        else {
+            this.read = true;
+        }
+        return;
+    }
+}
+
+/* Factory Function ---------------------------------------
 function Book(title, author, pages, read) {
     this.title = title;
     this.author = author;
@@ -27,6 +52,8 @@ Book.prototype.toggleRead = function () {
     }
     return;
 }
+
+*/
 
 function displayBooks() {
     container.innerHTML = ""; // Clear previous content
