@@ -9,7 +9,7 @@ const myLibrary = [];
 
 
 class Book {
-    constructor(title, author, pages, read){
+    constructor(title, author, pages, read) {
         this.title = title;
         this.author = author;
         this.pages = pages;
@@ -114,6 +114,21 @@ function addBookToLibrary(event) {
     modal.style.display = "none"; // Close the popup
 }
 
+
+
+
+document.getElementById('author').addEventListener('input', function () {
+
+    if (this.validity.patternMismatch) {
+        this.setCustomValidity('Author name must contain characters only');
+    } else {
+        this.setCustomValidity('');
+    }
+    this.reportValidity();
+});
+
+
+
 // Open the popup
 openFormBtn.addEventListener("click", () => {
     modal.style.display = "flex";
@@ -125,7 +140,7 @@ closeBtn.addEventListener("click", () => {
 });
 
 container.addEventListener('click', function (event) {
-    
+
     // Toggle Read Status when clicking the "Read" paragraph
     if (event.target.classList.contains('read-toggle')) {
         const bookCard = event.target.closest('.book-card'); // Get the closest book card
@@ -147,7 +162,7 @@ container.addEventListener('click', function (event) {
         const index = Array.from(container.children).indexOf(bookCard); // Get its index
         myLibrary.splice(index, 1); // Remove from library
         displayBooks(); // Re-render
-    }   
+    }
 });
 
 
