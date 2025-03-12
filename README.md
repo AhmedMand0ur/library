@@ -18,11 +18,11 @@ A simple web-based Library App that allows users to add, remove, and manage thei
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/library-app.git
+   git clone https://github.com/AhmedMand0ur/library.git
    ```
 2. Navigate to the project folder:
    ```sh
-   cd library-app
+   cd library
    ```
 3. Open `index.html` in your browser.
 4. Click **"Add Book"** to open the form and enter book details.
@@ -36,7 +36,7 @@ A simple web-based Library App that allows users to add, remove, and manage thei
 📁 library-app
 │-- 📄 index.html
 │-- 📄 style.css
-│-- 📄 script.js
+│-- 📄 main.js
 │-- 📄 README.md
 ```
 
@@ -47,7 +47,7 @@ A simple web-based Library App that allows users to add, remove, and manage thei
 - 🔍 Add **search & filter** options.
 
 ## 📝 License
-This project is open-source and available under the [MIT License](LICENSE).
+This project is open-source.
 
 ---
 👨‍💻 **Contributions are welcome!** Feel free to fork the repo and submit pull requests. Happy coding! 🚀
